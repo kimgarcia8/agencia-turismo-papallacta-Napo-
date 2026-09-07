@@ -642,3 +642,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+git add .
+git commit -m "Sube estilos CSS completos y actualiza el proyecto"
+git push origin main
