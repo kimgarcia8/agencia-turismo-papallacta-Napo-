@@ -7,6 +7,6 @@ Papallacta - Provincia de Napo, Ecuador
 Sitio web profesional y responsive de 5 páginas desarrollado para la agencia ficticia "Papallacta Tours". El portal está diseñado para promover el ecoturismo y las termas volcánicas.
 ## tecnología utilizadas
 html5,css3,github,githubpages 
-![Captura del sitio](papallacta.jpg.jpg).
+![Captura del sitio](40.png).
 
 
