@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas - PapallactaTours</title>
+    <!-- Ruta correcta hacia la carpeta css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logotipo" class="logo-img">
+            <span class="nombre-agencia">Papallacta<span>Napo</span></span>
+        </div>
+        <nav class="menu-principal">
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- CABECERA DE LA PÁGINA -->
+    <section class="page-header">
+        <h1>Reserva tu Experiencia</h1>
+        <p>Completa el formulario para planificar tu visita a Papallacta, Napo.</p>
+    </section>
+
+    <!-- CONTENEDOR DEL FORMULARIO -->
+    <main class="contacto-container">
+        <section class="form-wrapper">
+            <h2><i class="fa-solid fa-envelope-open-text"></i> Formulario de Reserva y Contacto</h2>
+            <p class="form-instruction">Rellena los campos obligatorios (*). Nos pondremos en contacto contigo a la brevedad posible.</p>
+
+            <!-- Formulario HTML5 con atributos requeridos -->
+            <form action="#" method="POST" class="formulario-reserva">
+                
+                <!-- 1. Nombre -->
+                <div class="form-group">
+                    <label for="nombre"><i class="fa-solid fa-user"></i> Nombre completo: *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <!-- 2. Correo electrónico -->
+                <div class="form-group">
+                    <label for="correo"><i class="fa-solid fa-envelope"></i> Correo electrónico: *</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <!-- 3. Teléfono -->
+                <div class="form-group">
+                    <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono / Celular: *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0991234567" required>
+                </div>
+
+                <!-- 4. Destino o actividad -->
+                <div class="form-group">
+                    <label for="destino"><i class="fa-solid fa-map-location-dot"></i> Destino o Atractivo de interés:</label>
+                    <select id="destino" name="destino">
+                        <option value="" disabled selected>Selecciona un atractivo</option>
+                        <option value="termas">Termas de Papallacta</option>
+                        <option value="laguna">Laguna de Papallacta</option>
+                        <option value="senderismo">Sendero Las Cascadas</option>
+                        <option value="gastronomia">Ruta de la Trucha</option>
+                        <option value="antisana">Mirador del Antisana</option>
+                        <option value="valle">Valle Encantado</option>
+                    </select>
+                </div>
+
+                <!-- 5. Fecha -->
+                <div class="form-group">
+                    <label for="fecha"><i class="fa-solid fa-calendar-days"></i> Fecha estimada del viaje: *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <!-- 6. Número de personas -->
+                <div class="form-group">
+                    <label for="personas"><i class="fa-solid fa-users"></i> Número de personas: *</label>
+                    <input type="number" id="personas" name="personas" min="1" max="50" value="1" required>
+                </div>
+
+                <!-- 7. Tipo de servicio -->
+                <div class="form-group">
+                    <label for="servicio"><i class="fa-solid fa-briefcase"></i> Tipo de servicio o paquete:</label>
+                    <select id="servicio" name="servicio">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="excursion-dia">Excursión Termal de un Día</option>
+                        <option value="ruta-culinaria">Ruta Culinaria de la Trucha</option>
+                        <option value="naturaleza">Caminata en el Páramo y Cascadas</option>
+                        <option value="fin-semana">Escapada Romántica (Fin de semana)</option>
+                    </select>
+                </div>
+
+                <!-- 8. Mensaje -->
+                <div class="form-group full-width">
+                    <label for="mensaje"><i class="fa-solid fa-comment-dots"></i> Mensaje o requerimientos adicionales:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si tienes alguna necesidad especial, alergias alimentarias, etc."></textarea>
+                </div>
+
+                <!-- 9. Botón Enviar -->
+                <div class="form-group full-width">
+                    <button type="submit" class="btn-enviar">Enviar Reserva <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; 2026 PapallactaTours - Napo, Ecuador. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
