@@ -642,15 +642,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-/* --- CORRECCIÓN RÁPIDA PARA EL LOGO Y IMÁGENES --- */
-.logo-img {
-    max-height: 45px !important;
-    width: auto !important;
-    object-fit: contain !important;
-}
-
-.logo-container img {
-    max-height: 45px !important;
-    width: auto !important;
-}
